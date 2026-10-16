@@ -80,7 +80,7 @@ The gap in accuracy between the best-performing label and the worst-performing l
 ---
 
 ## 5. Hard boundary accuracy of at least 0.60
-The model must achieve at least 60% accuracy on tricky posts that sit on the boundary between lore_analysis and franchise_critique.
+The model must achieve at least 60% accuracy on tricky posts that sit on the boundary between lore_analysis and franchise_discussion.
 
 **Why this target:** Posts often mix developer choices with lore examples. Setting a 60% accuracy for posts that mention both lore and game design tests whether the model is actually learning to follow my decision rule rather than getting confused by overlapping keywords.
 

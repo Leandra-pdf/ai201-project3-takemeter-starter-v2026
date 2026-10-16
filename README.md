@@ -74,10 +74,11 @@ Asks a direct question or seeks practical troubleshooting help for mechanics, pu
 > **Lost in LTTP please help**
 > Posting here because I took a long break and came back to lttp with no idea what im supposed to be doing... My situation is: I recall beating the wizard at the top of the tower, but when i use my mirror i do not get dark world where I still am Link. I get dark world where i am the Easter Bunny... Hopefully this rings a bell for somebody who can point me to the right track, thanks
 
-### `franchise_critique`
+### `franchise_discussion`
 
 **Definition:**
-Evaluates game design, developer choices, or Nintendo's overall direction for the series without relying on in-universe lore.
+Focuses on how the games are built, marketed, or managed by Nintendo (game design philosophy, developer interviews, hardware constraints, release schedules, or series direction) whether positive, neutral, or critical.
+>**CHANGED:** Focuses on meta-discussions about the series, the creators, and how the games are made, managed, or marketed. This includes game design choices, developer interviews, hardware constraints, series direction, etc. Any general industry critique whether it's positive, neutral, or critical.
 
 **Example 1:**
 > **It's been nearly 15 years since a new, traditional LoZ was released. When do we honestly think the next one will release?**
@@ -94,10 +95,10 @@ Evaluates game design, developer choices, or Nintendo's overall direction for th
 ### The hardest boundary
 
 **Which two labels:**
-`lore_analysis` and `franchise_critique`
+`lore_analysis` and `franchise_discussion`
 
 **The decision rule I used every time:**
-If the post's primary thesis argues about player mechanics, difficulty, or developer design choices, it is `franchise_critique`, even if it uses lore elements as examples. If the primary thesis is about explaining chronology, character motivations, or world history, it is `lore_analysis`.
+If the post's primary thesis argues about real-world factors, player mechanics, game design philosophy, etc, it is `franchise_discussion`, even if it uses lore elements as examples. If the primary thesis is about explaining chronology, character motivations, or world history, it is `lore_analysis`.
 
 
 
