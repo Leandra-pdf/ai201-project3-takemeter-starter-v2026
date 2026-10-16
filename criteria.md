@@ -51,63 +51,38 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall accuracy of at least 0.70 across test runs
+The model must correctly classify at least 7 out of every 10 posts overall in the test split across all evaluated test runs.
 
-<!-- Your criterion. It must name a number. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** Because there are 3 distinct labels in this taxonomy, a  random guesser would naturally achieve around a 33% success rate. Setting an overall accuracy target of 70% ensures that the classifier has genuinely learned enough about the `r/truezelda` community rather than relying on luck. 
 
 ---
 
-## 2.
+## 2. Gameplay inquiry accuracy of at least 0.60
+The model must score at least 60% on finding `gameplay_inquiry` posts.
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** On `r/truezelda`, people rarely ask basic gameplay help questions because mods delete low-effort posts. Out of 200 posts, I think gameplay questions will be the smallest category. With fewer examples to learn from, the AI can make more mistakes.
 
 ---
 
-## 3.
+## 3. Lore analysis accuracy of at least 0.70
+The model must score at least 70% on finding lore_analysis posts.
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** Based on initial browsing of the thread, deep lore discussions make up the vast majority of community activity and feature very distinct in-universe keywords like character names, timeline references, and world history. Because the model will have a much higher volume of lore training examples to learn from, it can be held to a higher performance standard.
 
 ---
 
-## 4.
+## 4. Maximum performance gap between labels of no more than 20% 
+The gap in accuracy between the best-performing label and the worst-performing label must not be larger than 20%.
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** I want to ensure the model delivers balanced performance across all three categories rather than favoring one label at the expense of another.
 
 ---
 
-## 5.
+## 5. Hard boundary accuracy of at least 0.60
+The model must achieve at least 60% accuracy on tricky posts that sit on the boundary between lore_analysis and franchise_critique.
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** Posts often mix developer choices with lore examples. Setting a 60% accuracy for posts that mention both lore and game design tests whether the model is actually learning to follow my decision rule rather than getting confused by overlapping keywords.
 
 ---
 
