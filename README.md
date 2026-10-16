@@ -48,39 +48,56 @@
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
-
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
-
-### `label_one`
+### `lore_analysis`
 
 **Definition:**
+Makes a narrative or world-building argument backed by specific references to game text, timelines, or in-universe history.
 
 **Example 1:**
->
+> **[All] Religions of Hyrule Part 1: Humans**
+> This is a post about the religions of Hyrule... The three most important deities of Hyrule are the Three Golden Goddess. Din, Nayru and Farore... Other then the Golden Goddesses, the main deity of the Hylians is the unseen goddess, Hylia, in which the Hylians get their name...
 
 **Example 2:**
->
+> **What is the darkness?????**
+> Okay, so the Master Sword is the sword that seals the darkness. At the end of a Link to the Past, Ganon was sealed within darkness... So... can anyone elaborate on what the darkness actually is? Is it the void of the evil realm... or the realm of null beneath the world of light?
 
-### `label_two`
+### `gameplay_inquiry`
 
 **Definition:**
+Asks a direct question or seeks practical troubleshooting help for mechanics, puzzles, or progression bottlenecks while playing a specific game.
 
 **Example 1:**
->
+> **[BOTW] I feel stuck! Help!**
+> ...The problem is I don't know what to do now. Any shrines I am still able to find are too difficult for where I'm at in the game. For example, a moderate test of strength - the guardian hits me once and I'm dead. I also have tried to grab a couple more towers, but they are too tall... Anyone willing to give me some advice...
 
 **Example 2:**
->
+> **Lost in LTTP please help**
+> Posting here because I took a long break and came back to lttp with no idea what im supposed to be doing... My situation is: I recall beating the wizard at the top of the tower, but when i use my mirror i do not get dark world where I still am Link. I get dark world where i am the Easter Bunny... Hopefully this rings a bell for somebody who can point me to the right track, thanks
+
+### `franchise_critique`
+
+**Definition:**
+Evaluates game design, developer choices, or Nintendo's overall direction for the series without relying on in-universe lore.
+
+**Example 1:**
+> **It's been nearly 15 years since a new, traditional LoZ was released. When do we honestly think the next one will release?**
+> "New, traditional LoZ" means: Not a spinoff, Not a remake or HD remaster, Not BotW or TotK given that they... are definitely not "traditional". Traditional formula = a 3D LoZ with the same general, dungeon-focused structured progression as OoT, MM, WW, TP, and SS...
+
+**Example 2:**
+> **Is Nintendo really going to sell the same game for each 5 year anniversary from now on?**
+> Zelda 25th anniversary - Release of Skyward Sword on the Wii
+> Zelda 30th anniversary - Release of Skyward Sword on the Wii U virtual console
+> Zelda 35th anniversary - Release of Skyward Sword on the Switch
+> Are they gonna keep doing this lol
+
 
 ### The hardest boundary
 
 **Which two labels:**
+`lore_analysis` and `franchise_critique`
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+If the post's primary thesis argues about player mechanics, difficulty, or developer design choices, it is `franchise_critique`, even if it uses lore elements as examples. If the primary thesis is about explaining chronology, character motivations, or world history, it is `lore_analysis`.
 
 
 
