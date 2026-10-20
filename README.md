@@ -125,29 +125,50 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* [BotW] [TotK] THEORY: the Era of the Wild is getting a third game centered around the triforce.
 >
-> *Could have been:*
+> I know a portion of the fandom is ready to leave the era of the wild, but I had this sudden revelation about the triforce not being in any of the games.
 >
-> *I chose, because:*
+> The saga will be a trilogy. A third game about the triforce and how the trilogy fits with the 3 timelines is about to slap us in the face.
+>
+> OoT Remake was released in the middle of it to reintroduce players to the concept of the triforce, since it hasn't been discussed in a while.
+>
+> ** doctors break into my room to take me away ** I AM NOT CRAZY, I KNOW WHAT THEY ARE DOING, THE TRILOGY OF THE WILD IS REAL
+
+> *Could have been:* franchise_discussion
+
+> *I chose, because:* lore_analysis
+>
+> Even though the post touches on community speculation and game remakes, its primary focus is an in-universe theory about the Triforce and how the Wild Era fits into the timeline. Because the core argument revolves around magical lore and timeline structures, lore_analysis is the best fit. Also, the word 'theory' is usually an indicator for talking about the lore of the game.
 
 **2.**
-> *The post:*
+> *The post:*  We've been stuck on the plateau for 8 months!
 >
-> *Could have been:*
+> Seriously, if you're like me and you've watched all the treehouse footage from E3 over and over again, it feels like we have been stuck on the great plateau for 8 months. It's crazy that this one little portion of the game has kept us occupied with things to talk about up until release. I think I'll be completing the shrines, clearing the bokoblin camps, grabbing the chests and killing the minibosses, then I'll be on my way because I want to see something new! I'll probably return to complete the area waaaay later on.
+
+> *Could have been:* gameplay_inquiry
+
+> *I chose, because:* franchise_discussion
 >
-> *I chose, because:*
+> Rather than asking for help, the author is discussing hype over pre-release, E3 footage, and community excitement. This player's sentiment and marketing makes franchise_discussion the correct category.
 
 **3.**
 > *The post:*
 >
-> *Could have been:*
+>[ALL] There are no port towns in Hyrule.
 >
-> *I chose, because:*
+> I recently watched Any Austin's video "Finding the Edge of the World in Zelda" and it made me realize how rare oceans are in this series. Rather ironic considering that it has two games set entirely on the high seas. But in a lot of Zelda games, Hyrule is completely landlocked. And even when there is a coast, there are no port towns.
+>
+> There have been settlements on the ocean, but most of them are small fishing villages like Papuchia Village, Lurelin Village, and Seesyde Village. You don't see port towns that are trade hubs with large galleons and other sailing ships.
+>
+> I think it's because the series mostly doesn't care much about what's going on outside of the immediate area the game is set in. Very rarely do you hear people mention other nations or realms beyond Hyrule, it's only if you directly visit other nations in a game that the wider world is given much consideration at all. So, we don't see port towns in Hyrule, because they're inclusion would mean acknowledging that there are places beyond Hyrule for ships to go, and that's just not something that the series thinks about very much.
+
+> *Could have been:* lore_analysis
+
+> *I chose, because:* franchise_discussion
+>
+> This post critiques how Nintendo designs its game worlds and handles map layouts from a real-world development perspective. Even though, it talks about the port locations, this is mainly a critique.
 
 ---
 
