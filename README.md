@@ -39,9 +39,7 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
+This project builds an NLP post classifier tailored for the **r/truezelda** Reddit community, a subreddit dedicated to high-effort discussion of *The Legend of Zelda* franchise. The classifier automatically categorizes incoming community submissions into one of three core intent buckets: `lore_analysis` (deep-dive in-universe theorycrafting and timeline history), `gameplay_inquiry` (questions about game mechanics, puzzle solutions, or playthrough help), and `franchise_discussion` (meta-discussions regarding game design choices, series rankings, and community expectations). By organizing posts by intent, this tool helps surface structured discussions and keeps community content well-categorized.
 
 
 ---
@@ -114,10 +112,10 @@ If the post's primary thesis argues about real-world factors, player mechanics, 
 
 | Label | Count | Share |
 |---|---:|---:|
-| lore_analysis | 69 | 34.5% |
-| gameplay_inquiry | 69 | 34.5% |
-| franchise_discussion | 62 | 31.0% |
-| **Total** | **200** | **100%** |
+| `lore_analysis` | 68 | 34.0% |
+| `gameplay_inquiry` | 68 | 34.0% |
+| `franchise_discussion` | 64 | 32.0% |
+| **Total** | **200** | **100.0%** |
 
 **Three hard cases**
 
@@ -188,26 +186,26 @@ of next unit's variance. -->
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Assistance debugging a persistent `ParserError: ',' expected after '"'` and subsequent `Expected 3 fields, saw 4` error in pandas when loading `labels.csv`.
+- *What came back:* Help identifying malformed CSV quotation marks in four Reddit post records, along with a Python script to repair the records by rejoining text fragments while preserving the `label` and `note` columns.
+- *What I changed:* Ran the diagnostic code to identify the four malformed records, then used a repair script to create `labels_fixed.csv` without modifying the original `labels.csv`. Verified that pandas could load the repaired file successfully and that the dataset contained the expected columns: `text`, `label`, and `note`.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Assistance investigating a warning that six duplicate posts could appear in different data splits and cause data leakage.
+- *What came back:* An explanation of why duplicate posts can inflate model evaluation scores and a suggestion to inspect duplicates before removing them.
+- *What I changed:* Prepared a Python cell to identify duplicate posts by their `text` content and display all occurrences alongside their labels and notes. This allows me to review the duplicates before deciding which records to remove.
+
+**Moment 3**
+
+- *What I asked for:* Help finding and pre-labeling target posts to speed up dataset building, along with converting Reddit thread contents into properly formatted RFC 4180 CSV rows.
+- *What came back:* Suggested post text snippets, initial taxonomy labels, and pre-formatted CSV entries.
+- *What I changed:* Checked and verified every AI classification before adding them to `labels.csv`.
 
 **Pre-labelling disclosure:**
+I used AI assistance to pull and format candidate posts from *r/truezelda* with initial label suggestions. I manually reviewed, verified, and adjusted the final labels for each entry across the dataset.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
