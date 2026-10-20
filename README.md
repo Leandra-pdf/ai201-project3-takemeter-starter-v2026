@@ -106,22 +106,18 @@ If the post's primary thesis argues about real-world factors, player mechanics, 
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+**Where the posts came from:** r/truezelda thread on Reddit.
 
-**Where the posts came from:**
-
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** Either as *cold* or as *pre-labelled – checked*
 
 **Counts per label:**
 
 | Label | Count | Share |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+|---|---:|---:|
+| lore_analysis | 69 | 34.5% |
+| gameplay_inquiry | 69 | 34.5% |
+| franchise_discussion | 62 | 31.0% |
+| **Total** | **200** | **100%** |
 
 **Three hard cases**
 
