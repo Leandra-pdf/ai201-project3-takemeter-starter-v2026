@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.6,
+    "f1_macro": 0.53491908330618,
+    "per_label": {
+      "franchise_discussion": {
+        "precision": 0.47619047619047616,
+        "recall": 1.0,
+        "f1": 0.6451612903225806,
+        "support": 10
+      },
+      "gameplay_inquiry": {
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777777,
+        "support": 10
+      },
+      "lore_analysis": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "support": 10
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Website Timeline Update and The \u201cShared Epilogue\u201d\r\n\r\nSo, when the timeline updated on the Japanese Zelda site, many (including the YouTuber Zeltik) were excited to see that within the website's source code, the Wild era games (BotW and TotK) were categorized as a \"shared epilogue\" at the end of all three timelines.\r\n\r\nMany fans have taken this as a potential confirmation of the \"convergence\" theory\u2014the idea that somehow, somewhere down the line, all three timelines merged into one before the events of Breath of the Wild. \r\n\r\nHowever, looking at it from a web development and structural perspective, calling it a \"shared epilogue\" is literally just a functional CSS/code tag used to display the Wild era games universally at the bottom of the page regardless of which timeline path you scroll down.\r\n\r\nWhat would this mean for Hyrule? The first convergence would be about reconciling different histories. The second would be about reconciling, or confronting, different realities. That raises an interesting question: can these worlds coexist without one having to erase or overwrite the others?",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Why the Green River Zoras appeared only in the downfall timeline theory.\r\n\r\nIn Oracle of Ages the green Zoras were referred to as the river Zoras, basically a different sub species of zora that inhabit fresh water lakes and rivers.\r\n\r\nI came up with this theory on why the Green River Zoras only appeared in the downfall timeline, and why the Zoras in Ocarina of Time looked so different now.\r\n\r\nWhen Ganondorf ruled Hyrule he changed the waters in Hyrule to be less salty, akin to removing the extra chlorine in the water, or removing its density at least compared to the regular water we see in Ocarina of Time when Link was a child. But it also lead to the Zora to slowly evolve to accommodate this water. The first few generations looked the same, so they took no interest in the water. But their biology was slowly changing in each generation to better reflect it, such as having more fishy features and such.\r\n\r\nThe reason why don't see the river Zora in the adult timeline is because of the great flood so the Zora couldn't change into the river Zora, but instead they changed into the Rito.\r\n\r\nThe reason why we don't see the river Zoras in the child timeline is because Link was sent back to his childhood, so Ganondorf couldn't tamper with the water so the Zora remained the same.",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Why can't the Deku Scrubs in FSA leave the Lost Woods?\r\n\r\nIn Four Swords Adventure we encounter the Deku Scrubs once more, but there is something different. They claim that Ganon II had awoken them from their slumber and they serve him because he promises to expand the Lost Woods and they say they cannot leave the Lost Woods.\r\n\r\nWhy would this be the case when they had previously had no problem with leaving the Lost Woods? In Minish Cap and Ocarina of Time they can be found throughout Hyrule. Even within the Oracle games we see them not only outside if the Lost Woods, but outside if Hyrule Kingdom itself (as well as in Tri Force Heroes with the Deku Totems).\r\n\r\nIs there something different about these Scrubs? Are they being deceived by Ganon?",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "What's your favorite area/region in any Zelda game?\r\n\r\nMy favorite is Lake Hylia from Twilight Princess. It's a really huge area that includes the Great Bridge of Hylia and the river leading to Zora's Domain. For a water area, it actually has quite a bit of platforming, and I've always found the land areas really fun to traverse. It's filled with a bunch of cool places like the fishing hole, Falbi and Flyers, and the Spring of Courage, and there's tons of secrets and treasures everywhere you go. I think it's the most beautiful area in the whole series, and has one of the best themes too (https://www.youtube.com/watch?v=DdgEIRBsTaU).",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Help with a potential tattoo in the Sheikah language?\r\n\r\nHey all,\r\n\r\nI've really been wanting to get a Zelda tattoo. Like super bad. So far, my consensus has been to get the following quote from OOT:\r\n\r\n\"A thing that does not change with time is a memory of younger days\"\r\n\r\n... in the Sheikah language from OOT.\r\n\r\nI was hoping to find some people that were more knowledgeable about the language than I am. I believe it's written from top to bottom in-game, but is it written from left to right or right to left? Any help would be appreciated, I don't want to try to get this until I'm 100% sure that it's accurate to the game.",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Advise on a new play through for TOTK\r\n\r\nI'm thinking about starting another run of TOTK, but I don't want to fall into the same habits I had on my first playthrough. I'm more traditional and combat focused player.\r\n\r\nWhat are some ways you've approached a new playthrough that made it feel fresh or completely different?",
+      "gold": "gameplay_inquiry",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[BOTW] Are Zelda's leggings historically accurate? \r\n\r\nIt seems that at least Hyrule castle is in the middle of a kind of Boroque fashion era. How feasible are Zelda's black legging? Would they even have the material to make them.\r\nThis is something that's been on my mind since release.",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Alternate solutions to puzzles?\r\n\r\nI know BOTW is known for not having a set salutation to most of it's puzzles, but I'm wondering how much of this exists in the previous games. I've played all of the games, most all the way though, and I do know this exists to an extent but off the top of my head I can only think of 2 instances. There's a room in the water temple in OOT with at least 3 different solutions, and that whole thing with using the cane of somara earlier then the game intends in I think the Ice temple in ALTTP. Not counting using glitches btw. So any other examples?",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "I Want to get back into the old Zelda games that I never beat as a kid. Should I use a walkthrough?\r\n\r\nTitle speaks for itself but i'll elaborate further... I've recently had the urge to get into some old NES, SNES, N64 stuff with the goal to complete some of the games I never beat as a small kid; And one franchise I played alot but never completed was ofc Zelda. I am no stranger to a challenge in RPGs and I like figuring out stuff for myself. HOWEVER. from my experience, a lot of the puzzles from old games seem to be downright ridiculous to figure out without the internet. I can recall times in games like Half-Life Blue Shift and Portal where i would spend 2 hrs figuring out a puzzle, then look it up in a walkthrough, beat puzzle, then think \"Why would anyone think of doing this? It's so illogical and not even clever\". Maybe i'll try with a walkthrough the first time and then discover my own strats the 2nd time around so i don't feel lost in incompetent repetition which seems to be a theme in the amazing games of the 80s,90s if you're a new player. Would love to hear your thoughts on whether people who haven't beat a zelda game (NES, SNES, N64 Era) should use a walkthrough",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Where do I go next?\r\n\r\nSo when I got my switch I played BotW and I fell in love with the Zelda lore and I've heard so much about the N64/GC era games that are so praised and after I finish Link To The Past I was wondering what one to start with. I should probably mention that I own neither a GameCube nor a Nintendo 64 so I'd be emulating on my PC more likely than not. I assumed Ocarina Of Time would be the logical starting point but all pointers are appreciated.",
+      "gold": "gameplay_inquiry",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[ALL] What are some theories/headcanons about the lore that you have or believe?\r\n\r\nFor the past few days I've been posted some strange theories about Zelda lore.\r\n\r\nMost of them are pretty much \"X became X\" or \"X is the same as X\", which some of you don't like. So, now I'm gong to take a break and ask if there are any theories or headcanon about the lore you want to share?\r\n\r\nI'll start.\r\n\r\nLeviathans reproduce by dreaming, much like Beholders from D&D. The Wind Fish has the power to created realistic worlds by dreaming. On rare occasions, these dreams become so vivid, it produces a new real leviathan.\r\n\r\nP.S. The Leviathan thing was going to be a whole post. But I realised there's not enough evidence to make it more then a headcanon. So, I just made it a post saying \"This is my bizarre headcanon. You can ignore it if you want. But you can tell me yours\" post.",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "I think some of us needed to go from imaginative teenagers to adults before we thought harder about this, but I'll just make it clear:\r\n\r\nIsn't it obvious to most people by now, that every time a new Zelda game came out it shifted what you thought was the current timeline? Given that you have to reinvent and rethink the entire timeline every time a new game is made, that puts into question what we already locked in stone as the previous operating-theory, what's the point of repeating that process?\r\n\r\nYou know that whatever Timeline you come up with only lasts until Breath of the Wild 3, when nothing fits together, again. For the third time.\r\n\r\nAt some point you realize that all the timeline ever was, was mental gymnastics, and in the end you may also start to suspect there isn't really any point to the timeline.\r\n\r\nWhat is the point of the timeline, and what's even the reason to make one if the games never actually connect with any purpose?",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[All] Religions of Hyrule Part 1: Humans\r\n\r\nThis is a post about the religions of Hyrule. This is going to be multiple parts. I don't know how many yet.\r\n\r\nThe Three Goddesses\r\nBit of an introduction.\r\nThe three most important deities of Hyrule are the Three Golden Goddess. Din, Nayru and Farore.\r\nThese three are the creators of the Zelda universe. And, along with the Triforce, appear to be worshiped by every race in some shape or form. Although, different races may place different levels of enthesis on a certain Goddess.\r\n\r\nHylia, Hylians and the Shiekah\r\nOther then the Golden Goddesses, the main deity of the Hylians is the unseen goddess, Hylia, in which the Hylians get their name.\r\nIn addition to the statues and springs, Hylia is also worshiped through her decendents, the Hyrulian Royal Family. The most famous members being the various Princesses Zelda, all named after the mortal reincarnation of Hylia. (I'm NOT saying \"All Zeldas are Hylia\". I'm only saying they are named after her). This was already a tradition as confirmed by King Rhoam. Although a Prince in AoL briefly made it \"law\". The Princessess Zelda also seem to be priestesses.\r\nThe Shiekah are a subset of Hylians, who guard the Royal Family. This tradition presumably coming from SS Impa being Hylia's servant.\r\n\r\nTrees and Leviathans\r\nAlthough the Deku Tree is known for being the guardian of the Kokiri/Koroks (who I'll get to in another part), he is an important figure in Hylian culture, something made more clear in later games. In BotW he guards the Master Sword, and in EoW he guards the Triforce.\r\nI previously made a post on how the Forest Temple of OoT may have been built by humans to worship the spirits of the forest. Specifically, the Deku Tree.\r\nThe Maku Trees I may discuss in the future.\r\nWe also have Levias, the Guardian of Skyloft. A figure revered by the Hylians (at the time, simply called \"humans\") who would be offered against bowl of Pumpkin Soup.\r\nLeviathans would loose relevance amongst Hylians in the future. Ignoring the Wind Fish, who's significance to Hyrule, if any, is unknown and the Ocean King, who is the god of is own world, most Leviathan worship would be practiced by the Zora.\r\nA possible exception by be Jabun in the WW. Whilst not confirmed, is assumed to have been worshiped by Hylians on Greatfish Isle. This would make sense, due to the flood making sea travel more important.\r\n\r\nGerudo\r\nUnlike other humans in Hyrule, the Gerudo don't worship Hylia (maybe except briefly in the past) or the Royal Family. Instead, the main focus of their religion is \"Ancestor worship\".\r\nThe Goddess of Sand is often assumed to be an aspect of Din, but other theories suggest it may be a personification of the Gerudo ancestor. It's possible this figure might represent the founding member of Hyrule's Gerudo settlement.\r\nThe Hylians once believed the Goddess of the Sand to be \"evil\", but only because they were still enemies with the Gerudo at the time.\r\n\r\nPart 2 is here: [All] Religions of Hyrule Part 2: Zora and Rito",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[OoT] Lore behind the Skull Mask\r\n\r\nThe Skull Mask us one of eight masks you can wear in OoT. At first glance, it doesn't seem like much. Just a funny mask, nothing more.\r\n\r\nHowever, if you talk to certain people, specifically, those in the woods, you can find some potential lore for the mask.\r\n\r\nWhen talking to Saria, she'll say the mask reminds us of something she saw in the woods. At first, I thought she was talking about Skull Kid. But this is before we sell the mask to him. You Could say this is an oversight, but I think it's more likely meant to be a hint of who to sell the mask to.\r\n\r\nFado will compare you to a \"Forest Ghost\".\r\n\r\nThe most intresting one is the Deku scrubs in the Forest Stage. they reward you with more Deku Sticks, as the mask resembles their \"sacred forest totem\".\r\n\r\nTheory\r\n\r\nSo, who or what is the skull mask based on? For Fado, it could just be a reference to the Stalfos, which she confirms to know about.\r\n\r\nI noticed that the mask looks like a simplified version of the mask Phantom Ganon wore. Phantom Ganon being the boss of the Forest Temple.\r\n\r\nOf course, it's unlikely Phantom Ganon is the figure Saria and the Deku Scrubs are talking about. However, it's possible that Ganondorf may have used a similar mask when requiting the Deku Scrubs to invade the Deku Tree.\r\n\r\nThe Deku appear to be your typical \"false idol worshipers\". This is shown in OoT when they regard Ghoma as their \"queen\", and later shown in FSA, when they worship Ganon, who, coincidentally, also places a Phantom of himself in the local Temple.\r\n\r\nIt's possible Ganondorf appeared to the Deku wearing the mask, claiming to be their god and appointing Ghoma as their queen. Saria, who spends a lot of time in the Lost Woods, may have seem a glimpse if this, but may not have thought of it. She may have just thought he was a regular forest spirit.\r\n\r\nIn the adult half, Ganondorf would create Phantom Ganon, based on himself as the \"Forest Totem\".\r\n\r\nEDIT:\r\n\r\nsomebody suggested they might actually see the Stalfos as their \"Forest Totem\". Ganondorf may have still used a mask to trick the Deku into thinking he was their god.",
+      "gold": "lore_analysis",
+      "predicted": "lore_analysis"
+    },
+    {
+      "text": "Are all Gerudo descendants of Groose and Impa? Skyward Sword theory\r\n\r\nThe Gerudo are notably absent from the events of Skyward Sword. I've always wondered why that is the case, since Nintendo ensured that there was an origin for the Gorons, the Zora, the Kokiri, and even Mogmas. When I first reached Lanayru, I was expecting to see the precursor to the Gerudo tribe- instead, we are met with the first automated and non-biological species: the LD Robot series. It is clear that these robots are not the ancestors of the Gerudo, for multiple reasons. They are non-living and their purpose of harvesting timeshift stones is exclusive to them, not passed down through time. In fact, the common trait of dark skin that is associated with the Gerudo tribe is all but absent from one character: Impa. However, she does not feature two other prominent Gerudo traits: red hair and amber eyes. Do you know who does possess such features? Groose. I don't love the idea that Groose started a family with granny Impa but I also don't think it was possible for him to start a family with young Impa. All this is to ask you folks a question: what do you believe happened? Is there an alternate origin for the Gerudo or is it strictly implied through Impa and Groose?",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[BotW] where do I go after defeating Ganon?\r\n\r\nI defeated Ganon yesterday, which the fact nothing changed as itself sucks, but that's besides the point.\r\n\r\nImpa says to go to Zelda, my quest log says to go to king Rhaom, but i don't know where either of them are.\r\n\r\nI did not get the secret ending but I heard it doesn't change anything.\r\n\r\nI am new to the fandom/community so if i sound stupid then i'm sorry\ud83d\ude30",
+      "gold": "gameplay_inquiry",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "OoT adult Link glitch inside Jabu-Jabu's belly\r\n\r\nSo a few years ago I found a glitch on the 3ds version where adult link is inside Jabu-Jabu's belly and was able to run around the dungeon. I remember standing a certain way on the ledge where he'd be but I'm unable to do it again. Has anyone else been able to do the same thing?",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "So lost with zelda II\r\n\r\nI just have no idea how to play this game. The boomerang throwers and spear guys just completely destroy me. Will leveling up help with fighting them? Or is it completely about timing?",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "[ALTTP] What's the best way to play A link to the past? SNES or GBA?\r\n\r\n[ALTTP] What's the best way to play A link to the past? SNES or GBA?",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "The worst part of losing the old 3D Zelda style of games, is that there is nothing out there to replace it.\r\n\r\nBy throwing most known Zelda elements out of the window with the Wild era games, the franchise has lost an identity and style of game that was unique to it. That dungeon crawling style of gameplay with long tighly designed puzzle boxes dungeons and their overwhelming atmosphere + item progression; is something that hasnt been able to be replicated in any other game, especially in 3D\r\n\r\n2D Zelda clones there has been many of them, some of them are quite good, and others not so much. But the 3D ones, there is simply nothing like it. Some could say Okami or Darksiders, but... is not really the same, and these are already pretty old games. There has been some indies with some projects pending, but get lost in the process.\r\n\r\nAnd is frustrating when you see fans of other franchises like Final Fantasy, who also changed and had their own fanbases divided aswell, but guess what? Atleast they got games like the current aclaimed Expedition 33 that pandered to older FF fans, or Baldurs Gate, or the Bravely Default series. But us older Zelda fans, especially from the OOT to SS era, got nothing like that.",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "AoC made me appreciate the English dub of BotW more\r\n\r\nJust to clarify, I am still not a big fan of certain decisions the dub made in regards to Zelda's voice acting in BotW (faux-British accent, sobbing instead of crying like in every other language, etc), but because Age of Calamity gives a lot of the characters a lot more lines than they did in BotW (or have most of it being Divine Beast tutorials/encouragement with regards to the champions) I have come to like them quite a bit more.\r\n\r\nDoes the dub still have it's issues? It most certainly does as I know Nintendo has had better dubs in the past such as Fire Emblem Shadows of Valentia & Three Houses; Xenoblade 1 and 2 (2's dub was good if flawed, fight me) and even Astral Chain had a pretty decent dub iirc.\r\n\r\nIn conclusion I'd say that while the dub still has its flaws and wouldn't say I'm looking forward to the English dub of BotW2, thanks to Age of Calamity I'm not exactly dreading it either.",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[Loz Twilight Princess Spoilers]Need help with Sky City Dungeon Boss in Twilight Princess\r\n\r\nIn the second part of the fight against Argorok, I can't seem to unlock from the flying plants and lock on to the Dragon's back. I just keep going in circles around the dragon. It's becoming increasingly frustrating as it's probably something simple that I'm not doing right. I've tried pressing a host of different buttons while hanging from the plants, nothing works. Youtube videos offer no insight either. How do I do it? (I'm playing the wii version)",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "Where could the cave leading to Ganondorf be located?\r\n\r\nRecently, I actually went wandering through Hyrule Castle. I tried to find any possible clues that could help point to where Ganondorf might be held. I thought of 3 places.\r\n\r\nThe main hall: This area is mysteriously blocked off in BOTW, even though it's a massive part of the castle. There's an obvious doorway leading to it, but boulders block it. Perhaps they open it in the sequel and discover a way down to his chamber.\r\n\r\nThe circular room where you fight Calamity Ganon: This one makes a bit more sense, since it's the furthest area beneath the castle. Though it doesn't seem like there would be any openings to reach him from there.\r\n\r\nOne of the passages at the bottom of the castle: This would be places like the prison, or where you unlock the hidden shrine. There could easily be some kind of hidden opening somewhere. There's a lot of stone walls, and rocks that could easily be moved to reveal a passageway. Where specifically though, I have no idea.\r\n\r\nIt's just something I've been thinking about a lot. His body was right under us the whole time and we had no clue.. until the BOTW2 trailer.",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Majora's mask helped me understand why I dislike BotW/TotK\r\n\r\nTo be brief, I'll just say that Majora's Mask and other games from that era incentivize you to explore not just for exploration sake but to progress in the game. And that's because Majora's Mask is much more cryptic and subtle in the hints it gives you. It won't just tell you \"go there\", will not repeat helpful information, Tatl will not even help you like Navi and there's no dot on the map or quest log to remind you what to do. These can all be viewed as negatives, but to me, that's when I enjoy exploring, because I actually need to do it to beat the game, not just waste time in a video game.\r\n\r\nBotW just tells you \"there's all of this you can do, here's exactly where you have to go to do it, but really if you want to beat the game just go there, you won't be scratching your head over how to get there, it's just that you have 1 chance in a million because it's difficult.\" I don't care about exploration in this context, if I don't have to do something to beat a game I'm unlikely to do it. Sure that's content I paid for that I'm missing, but I'm also not watching every movie on Netflix just because I paid for a subscription.\r\n\r\nI understand why a lot of people don't view Majora's Mask in a good light, it's not for everyone, and I think the cryptic nature is actually a turnoff for a lot of people. But I think these cryptic hints were the reason I explored the small world of Termina much more than other games that just clearly spell out what you have to do. I think Skyward Sword needed to be just as cryptic as Majora's Mask, because of how small the world is, instead of Fi constantly telling you where to go.",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "[Other] About \"Temple Maker 64\", an OoT maker\r\n\r\nIn case someone didn't know, there's basically an Ocarina of Time dungeon maker currently in development, and it has a free demo available on Steam.\r\n\r\nI've spent like 20 hours with the demo over the last few weeks, making levels and just messing around with it. People have already recreated stuff like the Forest Temple and the Deku Tree, and I'm pretty sure Vinesauce played it recently too.\r\n\r\nThe project is currently crowdfunding on Kickstarter and only has 3 days left. It's getting close enough that every new backer could genuinely make a difference.\r\n\r\nIf you're even remotely interested, I'd recommend downloading the demo first and if you enjoy it, then maybe support the Kickstarter afterwards or spread the word, please.\r\n\r\nI'm mostly posting because I feel like a lot of people don't know this project exists or assumes it's doing well and doesn't needs any help, and it would be a shame if it didn't make it without people even trying the demo.\r\n\r\nHas anyone else here played it yet?",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Thoughts on using a guide to get through zelda games?\r\n\r\nI don't like how sometimes I'll need a walkthrough guide to get through certain parts in Zelda. Specifically games like Alttp, Majora's mask and the GB Zelda's. i dislike having to take my phone out and go on zeldadungeon.com so it can tell me step by step how to complete the dungeon or get the next item. Sometimes I'll do it to get through puzzles too. Newer zelda games like the 3DS titles improved this, like in Majora's mask 3D they added the in game menu that shows your goals. I guess the early games get a pass though, since that's what zelda was all about: buying Nintendo power for all the secrets. To me, having to go through a guide really spoils the experience for me. It feels like somebody is playing the game for me.\r\n\r\nWhat are your thoughts on using guides during your zelda playthroughs?",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "Concerning Lynels\r\n\r\nSo I finally decided to properly square off against one of these classic foes after cheesing through the ones in the late game and man am I glad I did. I'm doing a 3 heart run and it took me literally hours to do it but the skill and tactics I gained in the process is just beautiful.\r\n\r\nPerfect parries, dodges, marksmanship, tenacity, & a bit of insanity are all required here and man did I end up making a show of it. I used almost all of my weapons in the final bout and even used the updraft from his fireballs to paraglide and stun him so I could mount him to finish him off.\r\n\r\nIt was glorious.",
+      "gold": "lore_analysis",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "[All] What are some examples of gods, demigods and deitys in this franchise?\r\n\r\nThe Zelda franchise is a fantasy franchise with a lot of magical creatures/characters. However, in a series with a bunch of characters with impressive powers, which characters are actualy considered gods/demigods/deitys?\r\n\r\nLike obviously we have the 3 Golden Godesses and Hylia as gods, however is Demise considered a god, or is he more of a demigod? Then what about the Sand godess in the Spirit Temple? Is that a real godess or just something the Gerudo worship?\r\n\r\nAgain, what about demigods? Which characters would be considered demigods? Demise, as i mentioned, and the Fierce Deity. What about the dragons in Skyward Sword? Would they be considered demigods, or simply deities, along with the dragons in the Wild Era? Or the Fairy Queen in Wind Waker? What about the Light Spirits in Twilight Princess?\r\n\r\nAs for deitys? We have Satori from BotW/TotK which is confirmed to be a deity. But are there others that would be considered deities? Great Fairies, The Ocean King, Deku Tree, Valoo, Lord JabuJabu and Jabuun definetly have the status as deities. But what about characters such as Zelda, Fi, Levias, The Wind Fish, Majora, Link or the like. Would they be considered deities, or simply just really powerful beings?",
+      "gold": "lore_analysis",
+      "predicted": "franchise_discussion"
+    },
+    {
+      "text": "Twilight Princess: Trapped in Lakebed Temple, HELP!\r\n\r\nplease, I'm desperate...just beat the mini-boss and got the claw-shot but one big problemo: I never unlocked the door past the bubble dude to get the water flowing. Instead I dropped down from the giant gear to get to the room with the mini-boss and (using the key I was supposed to use to get to the lever for the water) unlocked the door ahead of schedule. Now the only way to proceed is with the water I don't have, and the key I was supposed to get for the mini boss is also trapped behind a water puzzle. If I could get to that key past where the bridge that is supposed to be floating is without water or past the locked door where the first water level lever is without a key OR reset this temple without losing the rest of my progress (I only have the one save file) I could keep going, but I have no idea how to do that. Any ideas? please help :'(",
+      "gold": "gameplay_inquiry",
+      "predicted": "gameplay_inquiry"
+    },
+    {
+      "text": "Twilight Princess has a great art style and I'm tired of pretending it doesn't\r\n\r\nI've seen no game in the series catch a greater amount of flack for how it looks than TP does. People will say WW but that was only before and during that game's launch. People have (rightfully) long come around to it since, but it just seems like some people feel the need to viciously tear down this game's aesthetic to as some sort of retribution, and it's really not necessary. Criticisms of the game being too \u201cmuddy\u201d\" or too \"\u201cbrown\u201d\" seem just as petty as criticisms of WW being too childish or cartoonish.\"",
+      "gold": "franchise_discussion",
+      "predicted": "franchise_discussion"
+    }
+  ]
+}
