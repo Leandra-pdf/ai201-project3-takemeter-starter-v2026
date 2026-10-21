@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+lore_analysis: Deep-dive in-universe theorycrafting, timeline history, and story lore discussions.
+gameplay_inquiry: Questions about game mechanics, puzzle solutions, or playthrough help.
+franchise_discussion: Meta-discussions regarding game design choices, series rankings, and community expectations.
