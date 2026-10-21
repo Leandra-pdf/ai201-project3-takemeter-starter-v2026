@@ -250,8 +250,6 @@ I used AI assistance to pull and format candidate posts from *r/truezelda* with 
 **What I predicted before I looked:**
 I predict the fine-tuned model will beat the baseline overall because learning from real r/truezelda training posts will help it catch community tone differences that a generic prompt might miss. `lore_analysis` should be easy to get since those posts are more wordy.
 
-Here is how you can write out the **What the gap actually means:** section to capture that exact nuance and address the instruction head-on:
-
 **What the gap actually means:**
 Overall, the fine-tuned model beat the baseline, proving fine-tuning added value globally. However, on a per-label level, the baseline actually outperformed the trained model on `franchise_discussion` and `gameplay_inquiry`. The justification for fine-tuning comes down to `lore_analysis`, where the baseline failed and fine-tuning did well, proving that fine-tuning wasn't a universal upgrade, but rather a specialized trade-off.
 
