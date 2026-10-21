@@ -168,17 +168,37 @@ If the post's primary thesis argues about real-world factors, player mechanics, 
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
-
-**Base model:**
+**Base model:** `distilbert-base-uncased` (the notebook default)
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+3 epochs, learning rate 2e-5, batch size 16, max length 128 tokens, seed 42.  
+Trained on: Apple Silicon GPU (`mps`), PyTorch 2.14.1, Python 3.13.
 
 **Anything I changed from the defaults, and why:**
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+The only things I changed were updating the category names to my three custom topics and pointing the notebook to my data file (`labels_fixed.csv`) since I had to debug some errors in the notebook. So I made a duplicate data file in case I messed up.
+
+**Split sizes:** <!-- train / val / test, and per-label counts in the test split -->
+
+200 rows, stratified 70/15/15 with seed 42 → train 139 / val 31 / test 30.
+
+| label | train | val | test |
+|---|---:|---:|---:|
+| lore_analysis | 48 | 10 | 10 |
+| franchise_discussion | 44 | 10 | 10 |
+| gameplay_inquiry | 47 | 11 | 10 |
+
+**Results Summary:**
+* **Test Accuracy:** 0.700
+* **Test Macro F1:** 0.688
+* **Per-Label F1:**
+  * `lore_analysis`: 0.778 ($n=10$)
+  * `gameplay_inquiry`: 0.714 ($n=10$)
+  * `franchise_discussion`: 0.571 ($n=10$)
+* **Confidence Breakdown:** Most-sure third accuracy is 0.800, while least-sure third accuracy drops to 0.500.
+
+**Split Balance Note:**
+No label has fewer than 10 test posts in the holdout split, keeping test set variance low across classes.
 
 
 
