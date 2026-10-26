@@ -280,31 +280,29 @@ The biggest confusion is that 5 real `franchise_discussion` posts were classifie
 
 ---
 
-## Verdicts and Diagnoses
-
-<!-- MET or MISSED against LAST UNIT's target. The target has to hold across
-     all three seeds, not turn up sometimes. -->
+## **Verdicts and Diagnoses**
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | ≥ 0.70 across all three seeds | **MET** | Accuracy was 0.700, 0.800, and 0.733. All three runs met the target. |
+| 2 | `gameplay_inquiry` accuracy (recall) | ≥ 0.60 across all three seeds | **MET** | Recall was 1.000, 0.600, and 0.600. All three runs met the target. |
+| 3 | `lore_analysis` accuracy (recall) | ≥ 0.70 across all three seeds | **MET** | Recall was 0.700, 1.000, and 0.900. All three runs met the target. |
+| 4 | Maximum performance gap between labels | ≤ 0.20 across all three seeds | **MISSED** | The largest-minus-smallest per-label recall gap was 0.600, 0.400, and 0.300. Every run exceeded the target. |
+| 5 | Hard-boundary accuracy between `lore_analysis` and `franchise_discussion` | ≥ 0.60 | **Not measurable yet** | I don't think I can determine whether the target was met or missed from the available metrics. |
 
 **Diagnoses**
 
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
+**Criterion 4 — MISSED: Uneven performance and a difficult label boundary**
 
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
+The model's performance was uneven across labels. On Seed 42, it correctly identified all 10 `gameplay_inquiry` posts but only 4 of 10 `franchise_discussion` posts. Five `franchise_discussion` posts were classified as `gameplay_inquiry`. On Seed 7, four `gameplay_inquiry` posts were classified as `franchise_discussion`. On Seed 2024, three posts were confused in each direction between these categories. This repeated confusion suggests that distinguishing franchise discussions from gameplay questions is difficult for the model, and the size of the performance gap changes across test splits.
+
+**Criterion 5 — Measurement limitation**
+
+The current results do not identify a separate hard-boundary subset or calculate its accuracy. Therefore, I cannot produce a valid verdict against the original 0.60 target. I will revise the criteria.
 
 
+**Agreement Check**
+My agreement check showed 29 out of 30 of my labels agreed with the staff labels (97%). Therefore, I cannot conclude that the errors are caused by inconsistent labeling. The current evidence points to a difficult label boundary, but I would need to inspect the misclassified posts and their training labels to distinguish that.
 
 ---
 
