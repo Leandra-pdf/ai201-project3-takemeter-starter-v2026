@@ -227,6 +227,13 @@ No label has fewer than 10 test posts in the holdout split, keeping test set var
 **Pre-labelling disclosure:**
 I used AI assistance to pull and format candidate posts from *r/truezelda* with initial label suggestions. I manually reviewed, verified, and adjusted the final labels for each entry across the dataset.
 
+**Moment 4**
+
+- **What I asked for:** Help figuring out how to address the model's confusion between `franchise_discussion` and `gameplay_inquiry`, based on the baseline confusion matrices and misclassified Reddit posts.
+- **What came back:** Assistance interpreting the per-label F1 scores and confusion matrices, identifying `franchise_discussion` as the label with the lowest average baseline F1, and deciding how to target an improvement.
+- **What I changed:** Added 30 `franchise_discussion` posts to the dataset and corrected a post that I identified as having incorrect labels in the training data. I retrained and evaluated the model using the same three seed values. The results showed that `franchise_discussion` recall reached 100%, but overall accuracy and macro F1 declined, and the model misclassified many `lore_analysis` and `gameplay_inquiry` posts as `franchise_discussion`. This helped me recognize that improving recall for one label does not necessarily improve the classifier overall.
+
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -331,39 +338,45 @@ I agreed with the staff labels on 29 of 30 posts, giving me 97% agreement. This 
 
 **What I changed:**
 
+I added 30 labeled `franchise_discussion` posts to address confusion between `franchise_discussion` and `gameplay_inquiry`. I also corrected one mislabeled post in the original training data.
+
 **Which diagnosis pointed at it:**
+
+The baseline results showed that `franchise_discussion` had the lowest average F1 score (0.666) across the three seeds. The confusion matrices showed that many `franchise_discussion` posts were incorrectly classified as `gameplay_inquiry`. 
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.70 | 0.429 | 0.543 | 0.600 | MISSED |
+| 2. `gameplay_inquiry` recall | ≥ 0.60 | 0.000 | 0.000 | 0.091 | MISSED |
+| 3. `lore_analysis` recall | ≥ 0.70 | 0.100 | 0.455 | 0.600 | MISSED |
+| 4. Maximum gap between label recalls | ≤ 0.20 | 0.900 | 1.000 | 0.909 | MISSED |
+| 5. `franchise_discussion` recall | ≥ 0.70 | 1.000 | 1.000 | 1.000 | MET* |
 
 **Did it help, and how do I know:**
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+The change improved `franchise_discussion` recall from a baseline average of 0.633 to 1.000 across all three seeds. However, overall accuracy decreased from a baseline average of 0.744 to 0.524, and macro F1 decreased from 0.739 to 0.401. The model began classifying many `lore_analysis` and `gameplay_inquiry` posts as `franchise_discussion`, so the improvement to the target label came at the expense of overall classification performance.
+
+The after run used 35 test examples instead of the original 30, so the before-and-after comparison is not fully controlled. 
 
 
 
 ---
 
-## What's Still Broken
+## **What's Still Broken**
 
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
+- **Criteria 1, 2, and 3:** These three criteria were met in the original run, but they are now missed because the after-run results fell below their targets for all three seeds. I would investigate why the model began classifying so many posts as `franchise_discussion` and review the training data to improve the distinction between categories. I stopped because I ran out of time to continue the assignment.
 
+- **Criterion 4 — Maximum gap between label recalls:** This criterion was already missed in the original run and is still missed. The gap between the highest and lowest label recall is now even larger for all three seeds. I stopped because I ran out of time.
 
+- **Criterion 5 — `franchise_discussion` recall:** This criterion needs revising. Although recall reached 100% for all three seeds, the model incorrectly classified many posts from the other two categories as `franchise_discussion`. Recall alone does not measure whether the model distinguishes the categories correctly. I would revise this criterion to include precision or F1 and set a target that balances identifying franchise posts with avoiding false positives. I stopped before completing this revision and further testing because of time constraints.
 
-**The gap between what I meant my labels to capture and what the model
-learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
+- I also faced increasing Reddit rate limits while searching for additional posts to expand the dataset. This made collecting examples progressively slower and limited how much I could continue improving and testing the dataset.
 
+**The gap between what I meant my labels to capture and what the model learned:**
 
-
+I intended the labels to distinguish narrative and world-building arguments, practical gameplay help, and discussions about Nintendo's game design and series direction. However, the after-run confusion matrices show that the model learned to classify nearly everything as `franchise_discussion`, incorrectly assigning many lore and gameplay posts to that category instead of distinguishing the three labels.
 <!-- ═════════════════════════════════════════════════════════════════════
 
      SUBMISSION CHECKLIST — unit 5
