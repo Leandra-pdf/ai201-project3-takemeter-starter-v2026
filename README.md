@@ -308,58 +308,25 @@ The biggest confusion is that 5 real `franchise_discussion` posts were classifie
 
 ---
 
-## Agreement Report
+## **Agreement Report**
 
-<!-- Your rate against the staff set, and every disagreement adjudicated.
-
-     Remember you labelled these 30 under the STAFF taxonomy in
-     data/staff_taxonomy.md, not your own — so every argument below is made
-     from those definitions and those decision rules. -->
-
-**Agreement rate:** ___ / 30 = ___%
-
-<!-- Nobody grades this number. A 60% who argues every disagreement from the
-     stated rules beats a 95% who wrote "staff was right" nine times. Several
-     of the 30 were chosen because they're genuinely ambiguous — you should be
-     winning some of these. -->
+**Agreement rate:** **29 / 30 = 97%**
 
 **Disagreements**
 
-<!-- Three lines each: the post, both labels, and who you think is right and
-     why — grounded in the staff definitions you were both applying.
-
-     Then sort each into one of three piles:
-       (a) the rule covered it and I applied it loosely → a consistency problem
-       (b) the rule genuinely doesn't say               → a gap in the definitions
-       (c) the rule is ambiguous here and my reading is defensible → argue it.
-           This is a legitimate win.
-
-     Pile (a) is the one that matters most for your diagnosis: if you applied a
-     written rule two different ways on 30 posts, that is direct evidence about
-     what you did across your own 200. -->
-
 **1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
 
-**2.**
-> *The post:*
+> *The post:* “Every injury thread on this forum is the same injury and the same three replies.” 
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `hot_take` / `reaction`
 >
-> *My call, and why:*
+> *My call, and why:* I originally chose reaction because I interpreted the post as something said in response to having to fill out the form multiple times.
 >
-> *Which pile:*
+> *Which pile:* (a) The rule covered it and I applied it loosely — a consistency problem. I focused on the frustrated, reactive tone instead of checking whether the post actually met the definition of an immediate, recent personal reaction.
 
 **What the pattern in my disagreements tells me:**
 
-
-
+I agreed with the staff labels on 29 of 30 posts, giving me 97% agreement. This suggests that my interpretation of the staff taxonomy was generally consistent with the staff's labels on this set. However, the single disagreement concerns the distinction between `hot_take` and `reaction`.
 ---
 
 ## The Improvement
