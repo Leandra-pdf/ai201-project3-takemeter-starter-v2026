@@ -258,34 +258,25 @@ Overall, the fine-tuned model beat the baseline, proving fine-tuning added value
 
 ## Run Log — Before
 
-<!-- Five criteria across three seeds. The notebook's section 6 prints the
-     spread table; the Target and Verdict columns are yours. -->
-
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+|---|---|---:|---:|---:|---|
+| 1. Overall accuracy | Spread ≤ 0.100 | 0.700 | 0.800 | 0.733 | FAIL — spread is 0.100 |
+| 2. Macro F1 | Spread ≤ 0.100 | 0.688 | 0.795 | 0.733 | FAIL — spread is 0.107 |
+| 3. F1 — `lore_analysis` | Spread ≤ 0.100 | 0.778 | 0.952 | 0.900 | FAIL — spread is 0.175 |
+| 4. F1 — `franchise_discussion` | Spread ≤ 0.100 | 0.571 | 0.727 | 0.700 | FAIL — spread is 0.156 |
+| 5. F1 — `gameplay_inquiry` | Spread ≤ 0.100 | 0.714 | 0.706 | 0.600 | FAIL — spread is 0.114 |
 
 ### Confusion matrix
 
-<!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
-     An image of a matrix earns nothing. -->
-
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| true \ predicted | lore_analysis | franchise_discussion | gameplay_inquiry |
+|---|---:|---:|---:|
+| **lore_analysis** | 7 | 0 | 3 |
+| **franchise_discussion** | 1 | 4 | 5 |
+| **gameplay_inquiry** | 0 | 0 | 10 |
 
 **My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
 
-
+The biggest confusion is that 5 real `franchise_discussion` posts were classified as `gameplay_inquiry`, while 0 real `gameplay_inquiry` posts were classified as `franchise_discussion`. It correctly classified only 4 out of 10 `franchise_discussion` posts, compared with all 10 `gameplay_inquiry` posts. This could mean that some franchise discussions mention gameplay or use similar language, making them harder for the model to tell apart. 
 
 ---
 
